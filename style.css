@@ -118,10 +118,34 @@ nav ul li a:hover::after {
   display: block;
   margin: 25px 5px;
 }
-
-@media (max-width: 620px) {
-  .container,
+html,
+body {
+  overflow: hidden;
+}
+@media screen and (max-width: 600px) {
   .text-box {
-    font-size: 20px;
+    position: relative;
+    margin: 70px;
+  }
+  .text-box p {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .text-box h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  nav ul {
+    display: flex;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    height: 50px;
+    justify-content: space-between;
+    padding-right: px;
+  }
+  .cart-icon {
+    transform: none;
+    width: auto;
   }
 }
